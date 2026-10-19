@@ -9,8 +9,7 @@ An Android app for [one line: Booking and managing salon appointments].
 https://www.youtube.com/watch?v=dH6Mx49g2mU
 
 ## Overview
-
-GlamourCuts lets clients [what clients do] and gives salon admins and staff tools to [what admins do]. It solves [problem].
+GlamourCutsApp is an Android app for booking and managing salon appointments. Clients can register, browse services such as precision cuts, colour highlights, keratin and scalp treatments and bridal packages, book appointments, track their bookings, chat with the salon, and leave reviews and feedback. Salon admins and staff get tools to approve new users, manage staff and inventory, communicate with clients, and view analytics. It solves the problem of salons handling bookings, stock and client communication by phone and paper, by putting everything in one app that supports English, Afrikaans, Spanish, French and Zulu.
 
 ## Features
 
