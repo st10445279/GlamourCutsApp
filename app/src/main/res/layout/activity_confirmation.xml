@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FAF7F2"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/booking_confirmed"
+        android:textSize="28sp"
+        android:textColor="#3D2B1F"
+        android:fontFamily="serif"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvConfirmName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Name"
+        android:textSize="18sp"
+        android:textColor="#8B6651"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvConfirmService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Service"
+        android:textSize="18sp"
+        android:textColor="#8B6651"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvConfirmDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Date &amp; Time"
+        android:textSize="18sp"
+        android:textColor="#8B6651"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/btnAddToCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="@string/add_to_calendar"
+        android:textColor="#3D2B1F"
+        android:backgroundTint="#E6DED5"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="@string/share_booking"
+        android:textColor="#3D2B1F"
+        android:backgroundTint="#E6DED5"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnViewBookings"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="@string/view_my_bookings"
+        android:textColor="#3D2B1F"
+        android:backgroundTint="#D2B48C"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="@string/back_to_home"
+        android:textColor="#FAF7F2"
+        android:backgroundTint="#3D2B1F"/>
+
+</LinearLayout>

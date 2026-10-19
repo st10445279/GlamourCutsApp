@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="1dp"
+    app:strokeColor="#E8D5C4"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/llArticleHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvArticleCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="CATEGORY"
+                    android:textSize="11sp"
+                    android:textColor="#8B6651"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:layout_marginBottom="2dp" />
+
+                <TextView
+                    android:id="@+id/tvArticleTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Article Title"
+                    android:textSize="15sp"
+                    android:textColor="#3D2B1F"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivExpandIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/arrow_down_float"
+                android:contentDescription="Expand article"
+                app:tint="#8B6651" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvArticleContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Detailed step-by-step help content appears here."
+            android:textSize="13sp"
+            android:textColor="#5A4232"
+            android:layout_marginTop="12dp"
+            android:lineSpacingExtra="3dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

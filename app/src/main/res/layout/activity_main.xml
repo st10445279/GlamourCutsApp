@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF7F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/app_logo"
+            android:contentDescription="Glamour Cuts Logo" />
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="36sp"
+            android:textColor="#3D2B1F"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnBookNow"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/book_now"
+            android:textColor="#FAF7F2"
+            android:backgroundTint="#3D2B1F"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnServices"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/view_services"
+            android:textColor="#3D2B1F"
+            android:backgroundTint="#E8D5C4"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnMyBookings"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/my_bookings"
+            android:textColor="#3D2B1F"
+            android:backgroundTint="#E8D5C4"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnStaffDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/staff_dashboard"
+            android:textColor="#3D2B1F"
+            android:backgroundTint="#E8D5C4"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnInventory"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/inventory"
+            android:textColor="#3D2B1F"
+            android:backgroundTint="#E8D5C4"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnAnalytics"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/analytics"
+            android:textColor="#3D2B1F"
+            android:backgroundTint="#E8D5C4"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnViewReviews"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/view_reviews"
+            android:textColor="#3D2B1F"
+            android:backgroundTint="#E8D5C4"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnTeamChat"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Team Chat"
+            android:textColor="#3D2B1F"
+            android:backgroundTint="#E8D5C4"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/settings"
+            android:textColor="#3D2B1F"
+            android:backgroundTint="#E8D5C4"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnHelpSupport"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/help_and_support"
+            android:textColor="#3D2B1F"
+            android:backgroundTint="#E8D5C4"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/logout"
+            android:textColor="#8B6651"
+            android:backgroundTint="#FAF7F2"
+            android:layout_marginBottom="40dp"/>
+
+    </LinearLayout>
+</ScrollView>

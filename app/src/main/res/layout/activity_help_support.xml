@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF7F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/help_center"
+            android:textSize="26sp"
+            android:textColor="#3D2B1F"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find step-by-step guides, FAQs, or contact our support team."
+            android:textSize="14sp"
+            android:textColor="#8B6651"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Search Bar -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:strokeColor="#E8D5C4"
+            app:strokeWidth="1dp">
+
+            <EditText
+                android:id="@+id/etHelpSearch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/search_help_hint"
+                android:background="@null"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:inputType="text"
+                android:drawableStart="@android:drawable/ic_menu_search"
+                android:drawablePadding="12dp"
+                android:textSize="14sp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Category Filter Horizontal Scroll -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupCategories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCategoryAll"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_category_all"
+                    android:checked="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCategoryGettingStarted"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_category_getting_started" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCategoryBookings"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_category_bookings" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCategoryServices"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_category_services" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCategoryAccount"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_category_account" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCategoryStaff"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_category_staff" />
+
+            </com.google.android.material.chip.ChipGroup>
+        </HorizontalScrollView>
+
+        <!-- Help Documentation Articles / FAQ List -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frequently Asked Questions"
+            android:textSize="18sp"
+            android:textColor="#3D2B1F"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHelpArticles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Submit Support Request / Contact Section -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:strokeColor="#E8D5C4"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_support"
+                    android:textSize="18sp"
+                    android:textColor="#3D2B1F"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Can't find what you are looking for? Submit a ticket or reach us directly."
+                    android:textSize="13sp"
+                    android:textColor="#8B6651"
+                    android:layout_marginBottom="12dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:boxBackgroundMode="none"
+                    app:hintEnabled="false">
+
+                    <EditText
+                        android:id="@+id/etSupportSubject"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="@string/support_subject_hint"
+                        android:background="#FAF7F2"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:inputType="text"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:boxBackgroundMode="none"
+                    app:hintEnabled="false">
+
+                    <EditText
+                        android:id="@+id/etSupportMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:hint="@string/support_message_hint"
+                        android:background="#FAF7F2"
+                        android:padding="12dp"
+                        android:gravity="top|start"
+                        android:inputType="textMultiLine"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnSubmitSupportTicket"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/submit_ticket"
+                    android:textColor="#FAF7F2"
+                    android:backgroundTint="#3D2B1F"
+                    android:layout_marginBottom="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnEmailSupport"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="6dp"
+                        android:text="@string/email_support"
+                        android:textColor="#3D2B1F"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btnCallSupport"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="6dp"
+                        android:text="@string/call_support"
+                        android:textColor="#3D2B1F"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- System & App Info -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:strokeColor="#E8D5C4"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_diagnostics"
+                    android:textSize="16sp"
+                    android:textColor="#3D2B1F"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tvDiagnosticsInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="App Version: 1.0 | Role: Client | Database: Connected"
+                    android:textSize="13sp"
+                    android:textColor="#8B6651" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/btnHelpBack"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="@string/back_to_home"
+            android:textColor="#8B6651"
+            android:backgroundTint="#FAF7F2"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+</ScrollView>

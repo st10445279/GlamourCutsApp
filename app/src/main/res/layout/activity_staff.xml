@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF7F2"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvStaffTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:textSize="32sp"
+        android:textColor="#3D2B1F"
+        android:fontFamily="serif"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnStaffCommunication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TEAM CHAT / ANNOUNCEMENTS"
+        android:backgroundTint="#8B6651"
+        android:textColor="#FAF7F2"
+        android:layout_marginBottom="8dp"
+        style="?attr/materialButtonOutlinedStyle"/>
+
+    <Button
+        android:id="@+id/btnApproveUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="APPROVE PENDING STYLISTS"
+        android:backgroundTint="#3D2B1F"
+        android:textColor="#FAF7F2"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        style="?attr/materialButtonOutlinedStyle"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvStaffBookings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

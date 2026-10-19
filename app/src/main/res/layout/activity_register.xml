@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF7F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join Glamour Cuts"
+            android:textSize="32sp"
+            android:textColor="#3D2B1F"
+            android:fontFamily="serif"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREATE AN ACCOUNT"
+            android:textSize="11sp"
+            android:textColor="#C4957A"
+            android:letterSpacing="0.15"
+            android:layout_marginBottom="24dp"/>
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggleRegRole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:singleSelection="true"
+            app:checkedButton="@+id/btnRegClient">
+
+            <Button
+                android:id="@+id/btnRegClient"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="CLIENT" />
+
+            <Button
+                android:id="@+id/btnRegStaff"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="STYLIST" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxBackgroundMode="none"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/etRegUsername"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Username"
+                android:background="#FFFFFF"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxBackgroundMode="none"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/etRegPhone"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Phone Number"
+                android:background="#FFFFFF"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:inputType="phone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            app:boxBackgroundMode="none"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#3D2B1F">
+
+            <EditText
+                android:id="@+id/etRegPassword"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:background="#FFFFFF"
+                android:paddingStart="12dp"
+                android:paddingEnd="48dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnDoRegister"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="CREATE ACCOUNT"
+            android:textColor="#FAF7F2"
+            android:backgroundTint="#3D2B1F"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvBackToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Login here"
+            android:textSize="14sp"
+            android:textColor="#8B6651"
+            android:padding="8dp"
+            android:layout_marginBottom="40dp"/>
+
+    </LinearLayout>
+</ScrollView>

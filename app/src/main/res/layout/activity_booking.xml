@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF7F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Your Visit"
+            android:textSize="32sp"
+            android:textColor="#3D2B1F"
+            android:fontFamily="serif"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESERVE YOUR MOMENT"
+            android:textSize="11sp"
+            android:textColor="#C4957A"
+            android:letterSpacing="0.15"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="FIRST NAME" android:textSize="11sp" android:textColor="#8B6651" android:letterSpacing="0.15" android:layout_marginBottom="6dp"/>
+        <EditText android:id="@+id/etFname" android:layout_width="match_parent" android:layout_height="52dp" android:hint="Zanele" android:background="#FFFFFF" android:paddingStart="12dp" android:inputType="textPersonName" android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="LAST NAME" android:textSize="11sp" android:textColor="#8B6651" android:letterSpacing="0.15" android:layout_marginBottom="6dp"/>
+        <EditText android:id="@+id/etLname" android:layout_width="match_parent" android:layout_height="52dp" android:hint="Mokoena" android:background="#FFFFFF" android:paddingStart="12dp" android:inputType="textPersonName" android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PHONE NUMBER" android:textSize="11sp" android:textColor="#8B6651" android:letterSpacing="0.15" android:layout_marginBottom="6dp"/>
+        <EditText android:id="@+id/etPhone" android:layout_width="match_parent" android:layout_height="52dp" android:hint="+27 71 234 5678" android:background="#FFFFFF" android:paddingStart="12dp" android:inputType="phone" android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="EMAIL ADDRESS" android:textSize="11sp" android:textColor="#8B6651" android:letterSpacing="0.15" android:layout_marginBottom="6dp"/>
+        <EditText android:id="@+id/etEmail" android:layout_width="match_parent" android:layout_height="52dp" android:hint="you@example.com" android:background="#FFFFFF" android:paddingStart="12dp" android:inputType="textEmailAddress" android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SERVICE" android:textSize="11sp" android:textColor="#8B6651" android:letterSpacing="0.15" android:layout_marginBottom="6dp"/>
+        <Spinner android:id="@+id/spinnerService" android:layout_width="match_parent" android:layout_height="52dp" android:background="#FFFFFF" android:paddingStart="12dp" android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DATE" android:textSize="11sp" android:textColor="#8B6651" android:letterSpacing="0.15" android:layout_marginBottom="6dp"/>
+        <Button android:id="@+id/btnPickDate" android:layout_width="match_parent" android:layout_height="52dp" android:text="Select Date" android:textColor="#9A8E84" android:backgroundTint="#FFFFFF" android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PREFERRED TIME" android:textSize="11sp" android:textColor="#8B6651" android:letterSpacing="0.15" android:layout_marginBottom="6dp"/>
+        <Spinner android:id="@+id/spinnerTime" android:layout_width="match_parent" android:layout_height="52dp" android:background="#FFFFFF" android:paddingStart="12dp" android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/btnConfirmBooking"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="CONFIRM BOOKING"
+            android:textColor="#FAF7F2"
+            android:backgroundTint="#3D2B1F"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="40dp"/>
+
+    </LinearLayout>
+</ScrollView>

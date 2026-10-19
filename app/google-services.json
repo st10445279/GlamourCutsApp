@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "679335800998",
+    "project_id": "glamourcuts",
+    "storage_bucket": "glamourcuts.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679335800998:android:bbba83aa35c6f1af654467",
+        "android_client_info": {
+          "package_name": "com.example.glamourcuts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIyGltL1lh2gUgn45di93jyBiaKOPe7QE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

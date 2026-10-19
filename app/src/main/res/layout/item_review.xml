@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <RatingBar
+                android:id="@+id/reviewRating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1.0"
+                android:progressTint="@color/glamour_tertiary"/>
+
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvReviewUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/glamour_text_light"
+                android:text="User ID: 123"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvReviewComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/glamour_primary"
+            android:layout_marginTop="8dp"
+            android:textStyle="italic"
+            android:text="Good service!"/>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

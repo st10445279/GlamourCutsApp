@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF7F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/app_logo"
+            android:contentDescription="Glamour Cuts Logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Glamour Cuts"
+            android:textSize="32sp"
+            android:textColor="#3D2B1F"
+            android:fontFamily="serif"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Your Role"
+            android:textSize="14sp"
+            android:textColor="#8B6651"
+            android:layout_marginBottom="12dp"/>
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggleRole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            app:singleSelection="true"
+            app:checkedButton="@+id/btnRoleClient"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnRoleClient"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CLIENT" />
+
+            <Button
+                android:id="@+id/btnRoleStaff"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="STYLIST" />
+
+            <Button
+                android:id="@+id/btnRoleAdmin"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADMIN" />
+
+            <Button
+                android:id="@+id/btnRoleOwner"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OWNER" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxBackgroundMode="none"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Username"
+                android:background="#FFFFFF"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:inputType="text"
+                android:autofillHints="username"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:boxBackgroundMode="none"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#3D2B1F">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:background="#FFFFFF"
+                android:paddingStart="12dp"
+                android:paddingEnd="48dp"
+                android:autofillHints="password"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="LOGIN"
+            android:textColor="#FAF7F2"
+            android:backgroundTint="#3D2B1F"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or_divider"
+            android:textSize="14sp"
+            android:textColor="#8B6651"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSsoLogin"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/sso_google_login"
+            android:textColor="#3D2B1F"
+            app:strokeColor="#3D2B1F"
+            app:strokeWidth="1dp"
+            app:icon="@drawable/ic_google"
+            app:iconTint="@null"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/tvGoToRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Register here"
+            android:textSize="14sp"
+            android:textColor="#8B6651"
+            android:padding="8dp"
+            android:layout_marginBottom="40dp"/>
+
+    </LinearLayout>
+</ScrollView>
