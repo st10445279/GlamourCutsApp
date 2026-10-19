@@ -58,5 +58,5 @@ Command-line build: `gradlew.bat assembleDebug`
 ## Team
 
 | TIYASE NTESENG | Technical Lead / QA |
-|--------|------|
+|MAKHADO LUFUNO|Business Analyst|
 | MABELEBELE ALICIA |Developer / Project Manager|
